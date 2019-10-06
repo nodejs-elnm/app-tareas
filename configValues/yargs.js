@@ -10,9 +10,17 @@ const completado = {
     default: true
 };
 
+const tipo = {
+    alias: 't',
+    describe: 'Lista las tareas',
+    choices: ['all','true','false'],
+    default: 'all'
+};
+
 const argv = require('yargs')
     .command('crear', 'Crea una nueva tarea', {name})
     .command('delete', 'Crea una nueva tarea', {name})
+    .command('listar', 'Crea una nueva tarea', { tipo })
     .command('update', 'Actualiza el estado de una tarea', {
        name,
        completado

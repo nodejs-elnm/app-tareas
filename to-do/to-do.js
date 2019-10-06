@@ -35,9 +35,25 @@ const crear = ( name ) => {
     return todo;
 };
 
-const getlistado = () => {
+const getlistado = ( tipo ) => {
     loadDB();
-    return listadoTareas;
+
+    let listado = [];
+
+    switch (tipo) {
+        case 'true':          
+            listado = listadoTareas.filter( tarea => tarea.completado === true);
+            break;
+        case 'false':
+            listado = listadoTareas.filter(tarea => tarea.completado === false);
+            break;
+        default:
+            listado = listadoTareas;
+            break;
+    }
+
+    return listado;
+    
 };
 
 const update = (name, completado) => {

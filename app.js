@@ -11,7 +11,7 @@ switch (command) {
         break;
 
     case 'listar':
-        let ts = tareas.getlistado();
+        let ts = tareas.getlistado( argv.tipo );
 
         console.log('Tarea | Estado'.green);
         for (let t of ts) {
