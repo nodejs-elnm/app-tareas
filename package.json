@@ -1,0 +1,23 @@
+{
+  "name": "002-tareas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodejs-elnm/app-tareas.git"
+  },
+  "author": "Erik N",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nodejs-elnm/app-tareas/issues"
+  },
+  "homepage": "https://github.com/nodejs-elnm/app-tareas#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^14.0.0"
+  }
+}
